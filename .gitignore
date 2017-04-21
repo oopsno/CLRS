@@ -1,0 +1,5 @@
+cmake-build-*/
+build/
+include/catch.hpp
+Testing/
+.idea/
