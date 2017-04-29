@@ -1,6 +1,6 @@
 #pragma once
 
-#include <functional>
+#include "CLRS/algorithm/sort_utils.hpp"
 #include "CLRS/core/accessor.hpp"
 
 namespace CLRS {
@@ -16,8 +16,8 @@ void insert_sort(RandomAccessor<Iterator> A, Compare compare) {
   }
 }
 
-#include "CLRS/algorithm/sort_utils.hpp"
 STUB_SORT_ALGORITHM(insert_sort);
-#include "CLRS/algorithm/sort_utils_cleanup.hpp"
 
 }
+
+#include "CLRS/algorithm/sort_utils_cleanup.hpp"
