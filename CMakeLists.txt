@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.7)
+cmake_minimum_required(VERSION 3.2)
 project(CLRS VERSION 0.0.0.1 LANGUAGES CXX)
 
 include(cmake/colorize.cmake)
