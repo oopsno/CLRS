@@ -3,3 +3,4 @@ build/
 include/catch.hpp
 Testing/
 .idea/
+compile_commands.json
