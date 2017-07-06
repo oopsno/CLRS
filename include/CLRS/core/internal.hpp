@@ -15,8 +15,8 @@ namespace internal {
   static std::false_type detect_##name(...);                                 \
   }                                                                          \
   template <typename LHS, typename RHS>                                      \
-  struct has_##name                                                          \
-      : decltype(sfinae::detect_##name<LHS, RHS>(std::declval<RHS>())) {}
+  using has_##name =                                                         \
+      decltype(sfinae::detect_##name<LHS, RHS>(std::declval<RHS>()))
 
 MAKE_DETECTOR(shl, <<);
 MAKE_DETECTOR(shr, >>);
