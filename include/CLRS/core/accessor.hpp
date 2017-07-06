@@ -18,6 +18,14 @@ struct ImmutableRandomAccessor {
     return *(first + offset);
   }
 
+  auto cbegin() const {
+      return first;
+  }
+
+  auto cend() const {
+      return last;
+  }
+
   const RandomIterator first, last;
   const difference_type length;
 };
